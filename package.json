@@ -12,9 +12,12 @@
     "standalone",
     "app"
   ],
-  "author": "Dmitry Yarygin",
+  "author": "Dmitry Y.",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "~1.7.8"
+  },
+  "dependencies": {
+    "electron-navigation": "^1.5.3"
   }
 }

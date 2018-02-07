@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html>
 <title>FreeCampsites Locator</title>
-<style>
-html, body, webview {
-  flex: 1;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-}
-
-body {
-}
-</style>
-<webview src="https://www.freecampsites.net"></webview>
+<head>
+  <style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  </style>
+</head>
 <body>
+  <div id="nav-body-ctrls"></div>
+  <div id="nav-body-views"></div>
+  <script>
+    const ElectronNavigation = require('electron-navigation')
+    const enav = new ElectronNavigation({
+        showAddTabButton: false,
+        showUrlBar: false,
+        showReloadButton: true
+    })
+    enav.newTab('http://www.freecampsites.net', {
+      title: 'Freecampsites Locator',
+      icon: 'default',
+      close: false,
+      id: 'mainPage'
+
+})
+</script>
+  <!-- <webview src="https://www.freecampsites.net"></webview> -->
 </body>
 </html>
