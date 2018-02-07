@@ -1,0 +1,20 @@
+{
+  "name": "freecampsites-standalone-app",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/deemoun/freecampsites-standalone-app",
+  "keywords": [
+    "Freecampsites",
+    "standalone",
+    "app"
+  ],
+  "author": "Dmitry Yarygin",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "~1.7.8"
+  }
+}
